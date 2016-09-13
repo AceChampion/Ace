@@ -1,0 +1,23 @@
+def lp():
+    num = input('input a number:')
+    for each in range(int(num)):
+        if each % 2 != 0:
+            if each % 3 != 0:
+                if each % 5 != 0:
+                    if each < 10:
+                        print(each)
+                    else:
+                        while True:
+                            temp1 = each
+                            each = list(str(each))
+                            temp2 = each[0]
+                            each.pop(0)
+                            each = each.append(temp2)
+                            each = int(each)
+                            if each % 2 != 0:
+                                if each % 3 != 0:
+                                    if each % 5 != 0:
+                                        print(each)
+                            if each == temp1:
+                                break
+lp()
