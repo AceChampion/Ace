@@ -1,5 +1,5 @@
 #counti type in numbs and print max
-#ver2
+#ver3 finish!!yeeeeeese!!!
 temp = input('please inpuut\n\ta num(q to quit):')
 a = [int(temp)]
 while True:
@@ -7,9 +7,6 @@ while True:
     if temp.lower == 'q':
         break
     num = int(temp)
-    a = a.append(num)
-    Max = a[0]
-    for each in a:
-        if each > Max:
-            Max = each
+    a.append(num)
+    Max = max(a)
     print(Max)
